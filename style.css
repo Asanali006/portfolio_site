@@ -1,25 +1,36 @@
 /* Общие стили */
 body {
-    background-color: #121212; /* тёмный фон */
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #e0e0e0; /* светлый текст */
-    padding-top: 120px; /* отступ, чтобы контент не перекрывался фиксированной навигацией */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 120px; /* отступ для фиксированной навигации */
+}
+
+/* Светлая тема (по умолчанию) */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Тёмная тема */
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* Заголовок + навигация */
 header {
-    position: fixed; /* фиксируем сверху */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1f1f1f; /* графитовый */
-    color: #00aaff; /* акцентный синий */
+    background-color: #1f1f1f;
+    color: #00aaff;
     text-align: center;
     padding: 25px 0 10px 0;
     border-bottom: 2px solid #00aaff;
-    z-index: 1000; /* чтобы всегда было поверх */
+    z-index: 1000;
 }
 
 /* Навигация */
@@ -43,19 +54,42 @@ nav a:hover {
     border-bottom: 2px solid #00aaff;
 }
 
+/* Кнопка переключения темы */
+#theme-toggle {
+    margin-left: 20px;
+    padding: 6px 12px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #0077cc;
+}
+
 /* Заголовки */
-h1, h2 {
+h1, h2, h3 {
     color: #00aaff;
     margin-bottom: 12px;
 }
 
 /* Разделы */
 section {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     margin: 25px auto;
     padding: 25px;
     max-width: 900px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Для тёмной темы */
+.dark-theme section {
+    background-color: #1e1e1e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.6);
 }
 
@@ -88,6 +122,35 @@ section a {
 section a:hover {
     text-decoration: underline;
     color: #33bbff;
+}
+
+/* Форма обратной связи */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0077cc;
 }
 
 /* Нижний колонтитул */

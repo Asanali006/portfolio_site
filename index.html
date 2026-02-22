@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Asa</title>
-    <!-- Подключение CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Фиксированная навигация -->
+    <!-- Верхний колонтитул -->
     <header class="navbar">
         <h1>Портфолио Asa</h1>
         <nav>
-            <a href="#about">Обо мне</a>
-            <a href="#skills">Навыки</a>
-            <a href="#projects">Проекты</a>
-            <a href="#contacts">Контакты</a>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О себе</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+            <button id="theme-toggle">Сменить тему</button>
         </nav>
     </header>
 
     <!-- Основной контент -->
     <main>
-        <!-- Приветствие -->
-        <section id="greeting">
+        <!-- Заголовок -->
+        <section id="welcome">
             <h2>Добро пожаловать!</h2>
             <p>Рад представить вам моё портфолио.</p>
         </section>
@@ -32,77 +32,20 @@
             <img src="ava.png" alt="Аватар Asa" width="200">
         </section>
 
-        <!-- Слоган -->
-        <section id="slogan">
-            <h2>Моя цель</h2>
-            <p>"Создаю решения, которые делают жизнь проще и удобнее."</p>
-        </section>
-
-        <!-- Обо мне -->
-        <section id="about">
-            <h2>Обо мне</h2>
-            <p>Меня зовут Asa. Я из Павлодара, обучаюсь в Торайгыров университете по специальности «Информационные системы».</p>
-        </section>
-
-        <!-- Биография -->
-        <section id="bio">
-            <h2>Биография</h2>
-            <ul>
-                <li><strong>Имя:</strong> Асанали</li>
-                <li><strong>Город:</strong> Павлодар</li>
-                <li><strong>Университет:</strong> Торайгыров университет</li>
-                <li><strong>Специальность:</strong> Информационные системы</li>
-            </ul>
-        </section>
-
-        <!-- Интересы -->
-        <section id="interests">
-            <h2>Интересы</h2>
-            <p>Увлечен веб‑разработкой, дизайном интерфейсов и созданием игр.</p>
-        </section>
-
-        <!-- Хобби -->
-        <section id="hobbies">
-            <h2>Хобби</h2>
-            <p>Спорт, изучение новых технологий.</p>
-        </section>
-
-        <!-- Навыки -->
-        <section id="skills">
-            <h2>Навыки</h2>
-            <ul>
-                <li><strong>Технические:</strong> HTML, CSS, SQL</li>
-                <li><strong>Дополнительно:</strong> базовое знание и работа с базами данных</li>
-            </ul>
-        </section>
-
-        <!-- Проекты -->
-        <section id="projects">
-            <h2>Проекты</h2>
-            <p>Разработка веб‑сайта портфолио, прототип приложения и сайта для тренажерного зала, база данных для учебного проекта.</p>
-        </section>
-
-        <!-- Достижения -->
-        <section id="achievements">
-            <h2>Достижения</h2>
-            <p>Участие в студенческих мероприятиях, успешная реализация учебных проектов.</p>
-        </section>
-
-        <!-- Контакты -->
-        <section id="contacts">
-            <h2>Контакты</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:Kakenov_a@list.ru">Kakenov_a@list.ru</a></li>
-                <li><strong>Telegram:</strong> <a href="https://t.me/evoAsakh" target="_blank">@evoAsakh</a></li>
-                <li><strong>Instagram:</strong> <a href="https://instagram.com/Asakh.kb" target="_blank">@Asakh.kb</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Asanali006" target="_blank">github.com/Asanali006</a></li>
-            </ul>
+        <!-- Краткое описание -->
+        <section id="description">
+            <h2>Краткое описание</h2>
+            <p>Я студент Торайгыров университета по специальности «Информационные системы». 
+               Увлекаюсь веб‑разработкой, интерфейсным дизайном и созданием игр.</p>
         </section>
     </main>
 
     <!-- Нижний колонтитул -->
     <footer>
-        <p>&copy; 2026 Asa. Все права защищены.</p>
+        <p>&copy; 2026 Asa | Никнейм разработчика</p>
     </footer>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
 </body>
 </html>
